@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billionaires Dataset System 3</title>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+      }
+      
+      nav {
+        background-color: #2c3e50;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      nav a {
+        color: #ecf0f1;
+        text-decoration: none;
+        padding: 10px 18px;
+        margin: 0 8px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        display: inline-block;
+      }
+      
+      nav a:hover {
+        background-color: #34495e;
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      
+      nav a:active {
+        transform: translateY(0);
+      }
+      
+      h2 {
+        color: #2c3e50;
+        text-align: center;
+        margin: 35px 0;
+        font-size: 2.4em;
+        border-bottom: 3px solid #3498db;
+        padding-bottom: 12px;
+        font-weight: 600;
+      }
+      
+      #vis {
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 25px;
+        transition: box-shadow 0.3s ease;
+      }
+      
+      #vis:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+      
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        body {
+          padding: 12px;
+        }
+        
+        nav {
+          padding: 12px 8px;
+        }
+        
+        nav a {
+          padding: 8px 12px;
+          display: inline-block;
+          margin: 0 4px 8px 4px;
+        }
+        
+        h2 {
+          font-size: 2em;
+          margin: 25px 0;
+        }
+        
+        #vis {
+          padding: 15px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        h2 {
+          font-size: 1.8em;
+        }
+        
+        nav a {
+          display: block;
+          margin-bottom: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="system1.html">System 1</a>
+        <a href="system2.html">System 2</a>
+        <a href="system3.html">System 3</a>
+      </nav>
+
+    <h2>Billionaires Dataset System 3 Visualization</h2>
+
+    <div id="vis"></div>
+
+    <script src="script3.js"></script>
+  </body>
+</html>
