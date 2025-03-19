@@ -102,6 +102,33 @@
         transform: translateY(0);
       }
       
+      /* Task list styles */
+      .task-list {
+        list-style: none;
+        padding: 0;
+        margin: 40px 0;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      .task-list li {
+        background-color: #ecf0f1;
+        margin: 10px 0;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+      }
+      
+      .task-list li::before {
+        content: '✔';
+        color: #27ae60;
+        font-size: 1.5em;
+        margin-right: 15px;
+      }
+      
       /* Responsive adjustments */
       @media (max-width: 768px) {
         body {
@@ -162,6 +189,13 @@
       <button class="system-button" onclick="window.location.href='system2.html'">System 2</button>
       <button class="system-button" onclick="window.location.href='system3.html'">System 3</button>
     </div>
+
+    <ul class="task-list">
+      <li>Task 1 - Which country has the highest total billionaire wealth?</li>
+      <li>Task 2 - Analyse if there is a correlation between the country's GDP and its total billionaire wealth.</li>
+      <li>Task 3 - Who are the top three female billionaires in the United States aged below 40?</li>
+      <li>Task 4 - Who is the richest self-made billionaire in China, and which industry contributes the most to their wealth?</li>
+    </ul>
 
   </body>
 </html>
