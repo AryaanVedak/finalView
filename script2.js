@@ -288,7 +288,7 @@ function loadCSV() {
             width: 1400,
             height: 550,
             title: {
-              text: "Top 10 Billionaires in Selected Countries",
+              text: "Age vs Net Worth scatter plot",
               subtitle: "Double-click to clear selection",
             },
             data: { values: cleanedData },
