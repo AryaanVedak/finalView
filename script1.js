@@ -59,6 +59,15 @@ function loadCSV() {
             }
           },
           {
+            name: "max_age_filter",
+            value: 100,
+            bind: {
+              input: "select",
+              options: [30, 40, 50, 60, 70, 80, 90, 100],
+              name: "Maximum Age: "
+            }
+          },
+          {
             name: "gender_filter",
             value: "All",
             bind: {
@@ -111,7 +120,7 @@ function loadCSV() {
                     data: { values: data },
                     transform: [
                       {
-                        filter: "datum.age >= age_filter"
+                        filter: "datum.age >= age_filter && datum.age <= max_age_filter"
                       },
                       {
                         filter: "gender_filter === 'All' || datum.gender === gender_filter"
@@ -195,7 +204,7 @@ function loadCSV() {
                 data: { values: data },
                 transform: [
                   {
-                    filter: "datum.age >= age_filter"
+                    filter: "datum.age >= age_filter && datum.age <= max_age_filter"
                   },
                   {
                     filter: "gender_filter === 'All' || datum.gender === gender_filter"
@@ -297,7 +306,7 @@ function loadCSV() {
             data: { values: data },
             transform: [
               {
-                filter: "datum.age >= age_filter"
+                filter: "datum.age >= age_filter && datum.age <= max_age_filter"
               },
               {
                 filter: "gender_filter === 'All' || datum.gender === gender_filter"
@@ -414,7 +423,7 @@ function loadCSV() {
             data: { values: data },
             transform: [
               {
-                filter: "datum.age >= age_filter"
+                filter: "datum.age >= age_filter && datum.age <= max_age_filter"
               },
               {
                 filter: "gender_filter === 'All' || datum.gender === gender_filter"
